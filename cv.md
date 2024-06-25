@@ -21,12 +21,12 @@ console.log(str)
 ```
 ## Education:
 * Federal State Autonomous Educational Institution for Higher Education National Research Tomsk Polytechnic University
- * Information and measuring equipment and technologies
+    * Information and measuring equipment and technologies
 * Federal State Educational Institution of Secondary Vocational Education Anzhero-Sudzhensky Mining College
- * Mining electrician-technician
+    * Mining electrician-technician
 * Courses
- * HTML Academy
- * FreeCodeCamp
+    * HTML Academy
+    * FreeCodeCamp
 ## Languages:
 * Russian - native speaker.
 * English – A1
