@@ -1,3 +1,11 @@
+main {
+    margin: auto 10%;
+}
+
+div {
+    padding: 20px;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -15,3 +23,11 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
+  .grid-element-1 {
+    background-color: #f5f5f5;
+  }
+
+  /*.grid-element-2 {
+    
+  }*/
