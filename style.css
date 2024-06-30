@@ -46,9 +46,6 @@ ul {
     display: flex;
     justify-content: end;
     gap: 35px 0;
-
-    margin: 0;
-    padding: 0;
 }
     
 li a {
