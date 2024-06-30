@@ -33,8 +33,16 @@ ul {
     text-align: right;
 }
 
-.contacts-list,
-footer .container {
+.contacts-list {
+    display: flex;
+    justify-content: end;
+    gap: 35px 0;
+
+    margin: 0;
+    padding: 0;
+}
+
+.page-footer .container {
     display: flex;
     justify-content: end;
     gap: 35px 0;
@@ -172,7 +180,8 @@ li a {
     background-color: #00417d;
 }
   
-.page-footer a {
+.page-footer a,
+.page-footer p {
     margin-left: 56px;
     color: #ffffff;
     text-decoration: none;
