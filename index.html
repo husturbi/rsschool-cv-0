@@ -1,69 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1 class="visually-hidden">CV Ekaterina Bulycheva</h1>
-    </header>
-    <main class="grid-container">
-        <section class="grid-element-1">
-            <div>
-                <h2>Ekaterina Bulycheva</h2>
-                <img>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+        <title>CV JS/Front-end разработчик</title>
+    </head>
+
+    <body>
+        <nav class="">
+
+        </nav>
+        <header class="page-header">
+            <div class="container">
+                <ul class="contacts-list">
+                    <li>
+                        <a class="header-adress" href="https://maps.app.goo.gl/R145zPzEw4w1Ng9N8">Tomsk, Russian Federation</a>
+                    </li>
+                    <li>
+                        <a class="header-email" href="mailto:rotes44@gmail.com">rotes44@gmail.com</a>
+                    </li>
+                    <li>
+                        <a class="header-phone" href="tel:+79138838601">+7 913 883 86 01</a>
+                    </li>
+                    <li>
+                        <a class="header-git" href="https://github.com/husturbi">husturbi</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <section class="hero-image">
+            <div class="container">
+                <h1 class="heading">Ekaterina Bulycheva</h1>
                 <p>JS/Front-end developer</p>
             </div>
-            <div>
-                <h2>Contacts</h2>
-                <p>Location: Tomsk, Russian Federation</p>
-                <p>Phone: +7 913 883 86 01</p>
-                <p>Email: rotes44@gmail.com</p>
-                <p>GitHub: [husturbi](https://github.com/husturbi)</p>
-            </div>
-            <div>
-                <h2>About myself</h2>
-                <p>I want to learn Front-end in RSSchool. I am a quick learner, have an inquisitive mind, am patient and persistent.</p>
-            </div>
         </section>
-        <section class="grid-element-2">
-            <div>
-                <h2>Skills</h2>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JavaScript (Basic)</p>
-                <p>Git</p>
-            </div>
-            <div>
-                <h2>Code Example</h2>
-                <p>function helloWorld(){</p>
-                <p>var str="Hello World!"</p>
-                <p>console.log(str)</p>
-                <p>}</p>
-            </div>
-            <div>
-                <h2>Education</h2>
-                <h3>Federal State Autonomous Educational Institution for Higher Education National Research Tomsk Polytechnic University</h3>
-                <p>Information and measuring equipment and technologies</p>
-                <h3>Federal State Educational Institution of Secondary Vocational Education Anzhero-Sudzhensky Mining College</h3>
-                <p>Mining electrician-technician</p>
-                <h3>Courses</h3>
-                <p>HTML Academy</p>
-                <p>FreeCodeCamp</p>
-            </div>
-            <div>
-                <h2>Languages</h2>
-                <p>Russian - native speaker</p>
-                <p>English – A2</p>
-                <p>Spanish - A1</p>
-            </div>
-        </section>
-    </main>
-    <footer>
 
-    </footer>
-</body>
+        <section class="intro">
+            <div class="container">
+                <h2 class="subheading">About myself</h2>
+                <figure class="user-image">
+                    <img src="img/Katharina.jpg" width="763" height="572" alt="Ekaterina Bulycheva">
+                </figure>
+                <p>I want to learn Front-end in RSSchool. I am a quick learner, have an inquisitive mind, am patient and persistent.</p>
+                <div class="skills-list">
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <dl class="skills-list">
+                            <dt class="skill-html">HTML</dt>
+                            <dd class="level"><div style="width: 60%;">60%</div></dd>
+                            <dt class="skill-css">CSS</dt>
+                            <dd class="level"><div style="width: 40%;">40%</div></dd>
+                            <dt class="skill-js">JavaScript (Basic)</dt>
+                            <dd class="level"><div style="width: 10%;">10%</div></dd>
+                            <dt class="skill-git">Git</dt>
+                            <dd class="level"><div style="width: 10%;">10%</div></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div>
+                    <h3>Code Example</h3>
+                    <pre>
+                        <code>function helloWorld() {
+                                var str="Hello World!"
+                                console.log(str)
+                        }</code>
+                    </pre>
+                </div>
+                <div>
+                    <h3>Education</h3>
+                    <h4>Federal State Autonomous Educational Institution for Higher Education National Research Tomsk Polytechnic University</h4>
+                    <ul>
+                        <li>Information and measuring equipment and technologies</li>
+                    </ul>
+                    <h4>Federal State Educational Institution of Secondary Vocational Education Anzhero-Sudzhensky Mining College</h4>
+                    <ul>
+                        <li>Mining electrician-technician</li>
+                        <li>Accountant</li>
+                    </ul>
+                    <h4>Courses</h4>
+                    <ul>
+                        <li>HTML Academy</li>
+                        <li>FreeCodeCamp</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Russian - native speaker</li>
+                        <li>English - A2</li>
+                        <li>Spanish - A1</li>
+                    </ul>
+                </div>
+            </div>   
+        </section>
+
+        <footer class="page-footer">
+            <div class="container">
+                <a class="footer-git" href="https://github.com/husturbi">husturbi</a>
+                <a class="footer-rsschool" href="https://rs.school/courses/javascript">RS School</a>
+                <p>2024</p>
+            </div>
+        </footer>
+    </body>
 </html>
