@@ -171,6 +171,22 @@ li a {
     background-color: #288be6;
     border-radius: 6px;
 }
+
+.width-html {
+    width: 60%;
+}
+
+.width-css {
+    width: 40%;
+}
+
+.width-js {
+    width: 10%;
+}
+
+.width-git {
+    width: 10%;
+}
     
 .page-footer {
     padding: 40px 0;
