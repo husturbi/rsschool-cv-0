@@ -1,0 +1,23 @@
+/*Правило меняющее расчет элементов*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #545454;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0 auto;
+    width: 3796px;
+    height: 1280px;
+}
+
+img {
+    max-width: 100%;
+    height: auto; /*сохранение пропорций изображений*/
+}
