@@ -6,11 +6,12 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    line-height: 30px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px; /*определить размер*/
+    line-height: 32px;
     color: #545454;
     background-color: #ffffff;
+
     padding: 0;
     margin: 0 auto;
     width: 3796px;
@@ -20,4 +21,29 @@ body {
 img {
     max-width: 100%;
     height: auto; /*сохранение пропорций изображений*/
+}
+
+.header {
+    /*position: absolute;*/
+    top: 32px;
+    left: 44px;
+    right: 44px;
+    z-index: 1;
+    width: 1820px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    display: grid;
+}
+
+.navigation-list {
+    display: flex;
+    justify-content: end;
+    gap: 35px 0;
+
+    margin: 0;
+    padding: 0;
 }

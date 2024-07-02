@@ -1,5 +1,5 @@
 // плавный скролл по якорям
-document.querySelectorAll('a[href^="#"]').forEach(anchor =&gt; {
+/*document.querySelectorAll('a[href^="#"]').forEach(anchor =&gt; {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
  
@@ -7,4 +7,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor =&gt; {
             behavior: 'smooth'
         });
     });
-});
+});*/
