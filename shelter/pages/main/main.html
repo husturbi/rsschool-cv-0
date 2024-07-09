@@ -9,23 +9,22 @@
     <title>Cozy House</title>
 </head>
 <body>
-    <h1 class="visually-hidden">Cozy House</h1>
     <header class="page-header">
-            <nav class="navbar">
+        <nav class="navbar">
             <div class="navbar-logo">
                 <a class="logo" href="">
-                    <p class="logo-title">Cozy House</p>
+                    <h1 class="logo-title">Cozy House</h1>
                     <p class="logo-subtitle">Shelter for pets in Boston</p>
                 </a>
             </div>
             <div class="navbar-collapse">
                 <ul class="navbar-list">
-                    <li class="navbar-item">
+                   <li class="navbar-item">
                         <a class="navbar-link link navbar-link-current" href="">About the shelter</a>
                     </li>
                     <li class="navbar-item">
                         <a class="navbar-link link" href="pets/pets.html">Our pets</a><!--проверить ссылку-->
-                  </li>
+                    </li>
                     <li class="navbar-item">
                         <a class="navbar-link link" href="#help">Help the shelter</a>
                     </li>
@@ -68,40 +67,69 @@
                     <button class="btn-slider" type="button">
                         <img src="/shelter/assets/icons/Arrow.svg" alt="allow">
                     </button>
-                        <div class="card">
-                            <img src="/shelter/assets/images/pets-katrine.png" alt="Katrine">
-                            <p>Katrine</p>
-                            <button class="btn-card" type="button">Learn more</button>
-                        </div>
-                        <div class="card">
-                          <img src="/shelter/assets/images/pets-jennifer.png" alt="Jennifer">
-                          <p>Jennifer</p>
-                          <button class="btn-card" type="button">Learn more</button>
-                        </div>
-                        <div class="card">
-                            <img src="/shelter/assets/images/pets-woody.png" alt="Woody">
-                            <p>Woody</p>
-                            <button class="btn-card" type="button">Learn more</button>
-                        </div>
+                    <div class="card">
+                        <img src="/shelter/assets/images/pets-katrine.png" alt="Katrine">
+                        <p>Katrine</p>
+                        <button class="btn-card" type="button">Learn more</button>
+                    </div>
+                    <div class="card">
+                        <img src="/shelter/assets/images/pets-jennifer.png" alt="Jennifer">
+                        <p>Jennifer</p>
+                        <button class="btn-card" type="button">Learn more</button>
+                    </div>
+                    <div class="card">
+                        <img src="/shelter/assets/images/pets-woody.png" alt="Woody">
+                        <p>Woody</p>
+                        <button class="btn-card" type="button">Learn more</button>
+                    </div>
                     <button class="btn-slider" type="button">
                         <img src="/shelter/assets/icons/Arrow-back.svg" alt="allow back">
                     </button>
                 </div>
-                <button class="btn-content" type="button" name="rest">Get to know the rest</button>
+                <button id="btn-pets" class="btn-content" type="button" name="rest">Get to know the rest</button>
             </div>
         </section>
         <section class="help" id="help">
-            <h3>How you can help our shelter</h3>
-            <div class="list"> <!--Сделать списком-->
-                <p class="item">Pet food</p>
-                <p class="item">Transportation</p>
-                <p class="item">Toys</p>
-                <p class="item">Bowls and cups</p>
-                <p class="item">Shampoos</p>
-                <p class="item">Vitamins</p>
-                <p class="item">Medicines</p>
-                <p class="item">Collars / leashes</p>
-                <p class="item">Sleeping areas</p>
+            <div class="help-content">
+                <h3>How you can help our shelter</h3>
+                <ul class="help-list">
+                    <li class="help-item">
+                        <img src="/shelter/assets/icons/icon-pet-food.svg" alt="icon pet food">
+                        <p>Pet food</p>
+                    </li>
+                    <li class="help-item">
+                        <img src="/shelter/assets/icons/transportation.svg" alt="icon transportation">
+                        <p>Transportation</p>
+                    </li>
+                    <li class="help-item">
+                        <img src="/shelter/assets/icons/toys.svg" alt="icon toys">
+                        <p>Toys</p>
+                    </li>
+                    <li class="help-item">
+                        <img src="/shelter/assets/icons/bowls-and-cups.svg" alt="icon bowls and caps">
+                        <p>Bowls and cups</p>
+                    </li>
+                    <li class="help-item">
+                        <img src="/shelter/assets/icons/shampoos.svg" alt="icon shampoos">
+                        <p>Shampoos</p>
+                    </li>
+                    <li class="help-item">
+                        <img src="/shelter/assets/icons/vitamins.svg" alt="icon vitamins">
+                        <p>Vitamins</p>
+                    </li>
+                    <li class="help-item">
+                        <img src="/shelter/assets/icons/medicines.svg" alt="icon madicines">
+                        <p>Medicines</p>
+                    </li>
+                    <li class="help-item">
+                        <img src="/shelter/assets/icons/collars-or-leashes.svg" alt="icon collars or leashes">
+                        <p>Collars / leashes</p>
+                    </li>
+                    <li class="help-item">
+                        <img src="/shelter/assets/icons/sleeping-area.svg" alt="icon sleeping areas">
+                        <p>Sleeping areas</p>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="donation">
@@ -119,7 +147,7 @@
         </section>
     </main>
     <footer class="page-footer">
-            <div class="footer-content">
+        <div class="footer-content">
             <div class="footer-contacts">
                 <h3>For questions and suggestions</h3>
                 <ul class="footer-contacts-list">
