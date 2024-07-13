@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link rel="stylesheet" href="/shelter/reset.css">-->
     <link rel="stylesheet" href="/shelter/pages/normalize.css">
     <link rel="stylesheet" href="/shelter/pages/main/style.css">
     <title>Cozy House</title>
 </head>
 <body>
     <header class="page-header">
-        <nav class="navbar">
+        <nav class="navbar container">
             <div class="navbar-logo">
-                <a class="logo" href="">
+                <a class="logo" href="#">
                     <h1 class="logo-title">Cozy House</h1>
                     <p class="logo-subtitle">Shelter for pets in Boston</p>
                 </a>
@@ -23,7 +22,7 @@
                         <a class="navbar-link link navbar-link-current" href="">About the shelter</a>
                     </li>
                     <li class="navbar-item">
-                        <a class="navbar-link link" href="pets/pets.html">Our pets</a><!--проверить ссылку-->
+                        <a class="navbar-link link" href="pets/pets.html">Our pets</a>
                     </li>
                     <li class="navbar-item">
                         <a class="navbar-link link" href="#help">Help the shelter</a>
@@ -37,7 +36,7 @@
     </header>
     <main>
         <section class="start-screen">
-            <div class="start-screen-content">
+            <div class="start-screen-content container">
                 <div class="content">
                     <h2>Not only people need a house</h2>
                     <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
@@ -49,7 +48,7 @@
             </div>
         </section>
         <section class="about">
-            <div class="about-content">
+            <div class="about-content container">
                 <div class="about-image">
                     <img src="/shelter/assets/images/about-pets.png" alt="abou pets">
                 </div>
@@ -61,27 +60,35 @@
             </div>
         </section>
         <section class="pets">
-            <div class="pets-content">
+            <div class="pets-content container">
                 <h3>Our friends who<br>are looking for a house</h3>
-                <div class="slider"> <!--Списком?-->
+                <div class="slider-inner">
                     <button class="btn-slider" type="button">
                         <img src="/shelter/assets/icons/Arrow.svg" alt="allow">
                     </button>
-                    <div class="card">
-                        <img src="/shelter/assets/images/pets-katrine.png" alt="Katrine">
-                        <p>Katrine</p>
-                        <button class="btn-card" type="button">Learn more</button>
-                    </div>
-                    <div class="card">
-                        <img src="/shelter/assets/images/pets-jennifer.png" alt="Jennifer">
-                        <p>Jennifer</p>
-                        <button class="btn-card" type="button">Learn more</button>
-                    </div>
-                    <div class="card">
-                        <img src="/shelter/assets/images/pets-woody.png" alt="Woody">
-                        <p>Woody</p>
-                        <button class="btn-card" type="button">Learn more</button>
-                    </div>
+                    <ul class="slider">
+                        <li class="slider-item">
+                           <div class="card">
+                                <img src="/shelter/assets/images/pets-katrine.png" alt="Katrine">
+                                <p>Katrine</p>
+                                <button class="btn-card" type="button">Learn more</button>
+                            </div>
+                        </li>
+                        <li class="slider-item">
+                            <div class="card">
+                                <img src="/shelter/assets/images/pets-jennifer.png" alt="Jennifer">
+                                <p>Jennifer</p>
+                                <button class="btn-card" type="button">Learn more</button>
+                            </div>
+                        </li>
+                        <li class="slider-item">
+                           <div class="card">
+                                <img src="/shelter/assets/images/pets-woody.png" alt="Woody">
+                                <p>Woody</p>
+                                <button class="btn-card" type="button">Learn more</button>
+                            </div>
+                        </li>
+                    </ul>
                     <button class="btn-slider" type="button">
                         <img src="/shelter/assets/icons/Arrow-back.svg" alt="allow back">
                     </button>
@@ -90,7 +97,7 @@
             </div>
         </section>
         <section class="help" id="help">
-            <div class="help-content">
+            <div class="help-content container">
                 <h3>How you can help our shelter</h3>
                 <ul class="help-list">
                     <li class="help-item">
@@ -118,7 +125,7 @@
                         <p>Vitamins</p>
                     </li>
                     <li class="help-item">
-                        <img src="/shelter/assets/icons/medicines.svg" alt="icon madicines">
+                        <img src="/shelter/assets/icons/medicines.svg" alt="icon medicines">
                         <p>Medicines</p>
                     </li>
                     <li class="help-item">
@@ -133,34 +140,32 @@
             </div>
         </section>
         <section class="donation">
-            <div class="donation-image">
-                <img src="/shelter/assets/images/donation-dog.png" alt="donation dog">
-            </div>
             <div class="donation-content">
-                <h3>You can also make a donation</h3>
-                <p>Name of the bank / Type of bank account</p>
-                <div class="credit-card">
-                    <h4>8380 2880 8028 8791 7435</h4>
+                <div class="donation-image">
+                    <img src="/shelter/assets/images/donation-dog.png" alt="donation dog">
                 </div>
-                <p>Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                <div class="content-donation">
+                    <h3>You can also make a donation</h3>
+                    <p>Name of the bank / Type of bank account</p>
+                    <div class="credit-card">
+                        <h4>8380 2880 8028 8791 7435</h4>
+                    </div>
+                    <div class="donation-text">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</div>
+                </div>
             </div>
         </section>
     </main>
     <footer class="page-footer">
-        <div class="footer-content">
+        <div class="footer-content container">
             <div class="footer-contacts">
-                <h3>For questions and suggestions</h3>
-                <ul class="footer-contacts-list">
-                    <li class="mail">email@shelter.com</li>
-                    <li class="phone">+13 674 567 75 54</li>
-                </ul>
+                <h3 class="footer-title">For questions and suggestions</h3>
+                <div class="footer-mail footer-text">email@shelter.com</div>
+                <div class="footer-phone footer-text">+13 674 567 75 54</div>
             </div>
             <div class="footer-locations">
-                <h3>We are waiting for your visit</h3>
-                <ul class="footer-locations-list">
-                    <li class="Boston">1 Central Street, Boston (entrance from the store)</li>
-                    <li class="London">18 South Park, London</li>
-                </ul>
+                <h3 class="footer-title">We are waiting for your visit</h3>
+                <div class="location footer-text">1 Central Street, Boston (entrance from the store)</div>
+                <div class="location footer-text">18 South Park, London</div>
             </div>
             <div class="footer-image">
                 <img src="/shelter/assets/images/footer-puppy.png" alt="footer puppy">
