@@ -58,6 +58,7 @@ ul {
   }
 
 body {
+    position: relative;
     background-color: #f2f4f6;
     background-repeat: no-repeat;
     background-position: top center;
@@ -80,6 +81,14 @@ a {
     left: 0;
     right: 0;
     z-index: 1000;
+}
+
+.header-pets {
+    height: 120px;
+    padding-top: 30px;
+    background: var(--color-light-xl);
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 
 .navbar {
@@ -258,9 +267,11 @@ margin: 30px auto;
     font-size: 32px;
     line-height: 35.2px;
     letter-spacing: 0.06em;
-
     color: var(--color-primary);
+}
 
+.logo-pets {
+    color: var(--color-dark-l);
 }
 
 .logo-subtitle {
@@ -271,6 +282,10 @@ margin: 30px auto;
     color: var(--color-light-xl);
 
     text-align: center;
+}
+
+.logo-subtitle-pets {
+    color: var(--color-dark-3xl);
 }
 
 .navbar-link {
