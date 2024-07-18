@@ -8,10 +8,10 @@
     <title>Cozy House</title>
 </head>
 <body>
-    <header class="header-pets">
+    <header class="page-header">
         <nav class="navbar container">
             <div class="navbar-logo">
-                <a class="logo" href="#">
+                <a class="logo" href="main.html">
                     <h1 class="logo-title logo-pets">Cozy House</h1>
                     <p class="logo-subtitle logo-subtitle-pets">Shelter for pets in Boston</p>
                 </a>
@@ -19,64 +19,88 @@
             <div class="navbar-collapse">
                 <ul class="navbar-list">
                    <li class="navbar-item">
-                        <a class="navbar-link link navbar-link-current" href="">About the shelter</a>
+                        <a class="navbar-link link-pets" href="main.html">About the shelter</a>
                     </li>
                     <li class="navbar-item">
-                        <a class="navbar-link link" href="pets/pets.html">Our pets</a>
+                        <a class="navbar-link link-pets link-active" href="#">Our pets</a>
                     </li>
                     <li class="navbar-item">
-                        <a class="navbar-link link" href="#help">Help the shelter</a>
+                        <a class="navbar-link link-pets" href="main.html#help">Help the shelter</a>
                     </li>
                     <li class="navbar-item">
-                        <a class="navbar-link link" href="">Contacts</a>
+                        <a class="navbar-link link" href="#contacts">Contacts</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <section class="pets">
-            <div class="pets-content container">
+        <section class="ourpets container">
+            <div class="ourpets-content">
                 <h3>Our friends who<br>are looking for a house</h3>
-                <div class="slider-inner">
-                    <ul class="slider">
-                        <li class="slider-item">
-                           <div class="card">
-                                <img src="/shelter/assets/images/pets-katrine.png" alt="Katrine">
-                                <p>Katrine</p>
-                                <button class="btn-card" type="button">Learn more</button>
-                            </div>
-                        </li>
-                        <li class="slider-item">
-                            <div class="card">
-                                <img src="/shelter/assets/images/pets-jennifer.png" alt="Jennifer">
-                                <p>Jennifer</p>
-                                <button class="btn-card" type="button">Learn more</button>
-                            </div>
-                        </li>
-                        <li class="slider-item">
-                           <div class="card">
-                                <img src="/shelter/assets/images/pets-woody.png" alt="Woody">
-                                <p>Woody</p>
-                                <button class="btn-card" type="button">Learn more</button>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="/shelter/assets/images/pets-katrine.png" alt="Katrine">
+                        <p>Katrine</p>
+                        <a class="button btn-card">Learn more</a>
+                    </div>
+                    <div class="card">
+                        <img src="/shelter/assets/images/pets-jennifer.png" alt="Jennifer">
+                        <p>Jennifer</p>
+                        <a class="button btn-card">Learn more</a>
+                    </div>
+                    <div class="card">
+                        <img src="/shelter/assets/images/pets-woody.png" alt="Woody">
+                        <p>Woody</p>
+                        <a class="button btn-card">Learn more</a>
+                    </div>
+                    <div class="card">
+                        <img src="/shelter/assets/images/pets-sophia.png" alt="Sophia">
+                        <p>Sophia</p>
+                        <a class="button btn-card">Learn more</a>
+                    </div>
+                    <div class="card">
+                        <img src="/shelter/assets/images/pets-timmy.png" alt="Timmy">
+                        <p>Timmy</p>
+                        <a class="button btn-card">Learn more</a>
+                    </div>
+                    <div class="card">
+                        <img src="/shelter/assets/images/pets-charly.png" alt="Charly">
+                        <p>Charly</p>
+                        <a class="button btn-card">Learn more</a>
+                    </div>
+                    <div class="card">
+                        <img src="/shelter/assets/images/pets-scarlet.png" alt="Scarlett">
+                        <p>Scarlett</p>
+                        <a class="button btn-card">Learn more</a>
+                    </div>
+                    <div class="card">
+                        <img src="/shelter/assets/images/pets-freddie.png" alt="Freddie">
+                        <p>Freddie</p>
+                        <a class="button btn-card">Learn more</a>
+                    </div>
+                </div>
+                <div class="pets-paginator">
+                    <button class="btn-container" type="button">&lt;&lt;</button>
+                    <button class="btn-container" type="button">&lt;</button>
+                    <button class="btn-container" type="button">1</button>
+                    <button class="btn-container" type="button">&gt;</button>
+                    <button class="btn-container" type="button">&gt;&gt;</button>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" id="contacts">
         <div class="footer-content container">
             <div class="footer-contacts">
                 <h3 class="footer-title">For questions and suggestions</h3>
-                <div class="footer-mail footer-text">email@shelter.com</div>
-                <div class="footer-phone footer-text">+13 674 567 75 54</div>
+                <a class="footer-mail footer-text" href="mailto:email@shelter.com">email@shelter.com</a>
+                <a class="footer-phone footer-text" href="tel:+136745677554">+13&nbsp;674&nbsp;567&nbsp;75&nbsp;54</a>
             </div>
             <div class="footer-locations">
                 <h3 class="footer-title">We are waiting for your visit</h3>
-                <div class="location footer-text">1 Central Street, Boston (entrance from the store)</div>
-                <div class="location footer-text">18 South Park, London</div>
+                <a class="location footer-text" href="https://maps.app.goo.gl/jBGjjrnKnmwtyaAt9" target="_blank">1 Central Street, Boston (entrance from the store)</a>
+                <a class="location footer-text" href="https://maps.app.goo.gl/BimCnp1kR1YRAaxc9" target="_blank">18 South Park, London</a>
             </div>
             <div class="footer-image">
                 <img src="/shelter/assets/images/footer-puppy.png" alt="footer puppy">
