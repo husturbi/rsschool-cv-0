@@ -5,6 +5,20 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Arial';
+    src: url('assets/fonts/arial/arial-regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: url('assets/fonts/georgia/georgia-regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,7 +68,6 @@ ul {
 :root {
     --font-family: "Georgia", sans-serif;
     --second-family: "Arial", sans-serif;
-    --third-family: "Inter", sans-serif;
   }
 
 html {
@@ -81,6 +94,11 @@ a {
 
 .page-header {
     padding-top: 30px;
+}
+
+.pets-header {
+    height: 120px;
+    background: #fff;
 }
 
 .navbar {
@@ -608,15 +626,43 @@ gap: 32px;
 
 .link-main:hover:not(.link-active) {
     color: #fafafa;
+    transition: 0.5s linear;
 }
 
 .link-pets:hover:not(.link-active) {
     color: #292929;
+    transition: 0.5s linear;
 }
 
 .card:hover {
     background-color: #fff;
     box-shadow: 0px 2px 35px 14px #0D0D0D0A;
     cursor: pointer;
+    transition: 0.5s linear;
 }
 
+.card:hover .btn-card {
+    background-color: #FDDCC4;
+    border: #fddcc4;
+    transition: 0.5s linear;
+}
+
+.btn-start:hover,
+.btn-content:hover {
+    background: #FDDCC4;
+    transition: 1s linear;
+
+}
+
+.btn-slider:hover,
+.btn-container:hover:not(.disabled) {
+    background: #FDDCC4;
+    border: #FDDCC4;
+    transition: 0.5s linear;
+    cursor: pointer;
+}
+
+.disabled {
+    color: #CDCDCD;
+    border: 2px solid #CDCDCD;
+}
