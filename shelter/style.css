@@ -507,7 +507,7 @@ h4 {
     line-height: 115%;
     letter-spacing: 0.06em;
     color: #545454;
-    background-image: url(/shelter/assets/icons/credit-card.svg);
+    background-image: url(assets/icons/credit-card.svg);
     background-repeat: no-repeat;
 }
 
@@ -563,14 +563,14 @@ h4 {
 .footer-mail {
     height: 32px;
     padding-left: 60px;
-    background-image: url(/shelter/assets/icons/mail.svg);
+    background-image: url(assets/icons/mail.svg);
     background-repeat: no-repeat;
 }
 
 .footer-phone {
     height: 32px;
     padding-left: 60px;
-    background-image: url(/shelter/assets/icons/phone.svg);
+    background-image: url(assets/icons/phone.svg);
     background-repeat: no-repeat;
 }
 
@@ -583,18 +583,18 @@ h4 {
 .location {
     height: 46px;
     padding-left: 42px;
-    background-image: url(/shelter/assets/icons/pin.svg);
+    background-image: url(assets/icons/pin.svg);
     background-repeat: no-repeat;
 }
 
 .link-main:hover:not(.link-active) {
     color: #fafafa;
-    transition: 0.5s linear;
+    border-bottom: 3px solid #f1cdb3;
 }
 
 .link-pets:hover:not(.link-active) {
     color: #292929;
-    transition: 0.5s linear;
+    border-bottom: 3px solid #f1cdb3;
 }
 
 .card:hover {
