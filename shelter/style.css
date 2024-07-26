@@ -64,7 +64,6 @@ body {
     background-color: #f2f4f6;
     background-repeat: no-repeat;
     background-position: top center;
-    
 }
 
 img {
@@ -131,7 +130,8 @@ a {
     justify-content: space-between;
 }
 
-.start-screen-image {
+.start-screen-image,
+.about-image {
     display: flex;
 }
 
@@ -180,13 +180,11 @@ h3 {
 
 .pets {
     position: relative;
-    height: 877px;
     padding-top: 80px;
+    padding-bottom: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
     text-align: center;
-}
-
-.pets-content {
-    height: 697px;
 }
 
 .pets-content h3 {
@@ -212,16 +210,17 @@ h3 {
 }
 
 .slider-inner {
-    height: 435px;
     margin-top: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 53px;
 }
 
 .slider {
     display: flex;
-    gap: 90px;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
 .cards-container {
@@ -631,6 +630,16 @@ h4 {
     border: 2px solid #CDCDCD;
 }
 
+@media (max-width: 1130px){
+    .hide {
+        display: none;
+    }
+
+    .slider-inner {
+        gap: 100px;
+    }
+}
+
 @media (max-width: 970px){
     .start-screen {
         padding-top: 150px;
@@ -660,6 +669,8 @@ h4 {
     .about-content {
         flex-wrap: wrap;
         gap: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .about-content .content {
