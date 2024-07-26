@@ -588,12 +588,12 @@ h4 {
 
 .link-main:hover:not(.link-active) {
     color: #fafafa;
-    border-bottom: 3px solid #f1cdb3;
+    transform: 0.5s linear;
 }
 
 .link-pets:hover:not(.link-active) {
     color: #292929;
-    border-bottom: 3px solid #f1cdb3;
+    transform: 0.5s linear;
 }
 
 .card:hover {
