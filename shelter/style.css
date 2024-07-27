@@ -270,9 +270,10 @@ h3 {
 }
 
 .page-footer {
-    height: 350px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
     display: flex;
-    align-items: flex-end;
     background: url(/shelter/assets/images/noise_transparent.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), url("/shelter/assets/images/noise_transparent@2x.png");
     background-position: top center;
 }
@@ -516,7 +517,6 @@ h4 {
 }
 
 .footer-content {
-    height: 310px;
     display: flex;
     gap: 160px;
 }
@@ -543,43 +543,45 @@ h4 {
 
 .footer-contacts,
 .footer-locations {
-    margin-top: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin-top: 17px;
+    margin-bottom: 56px;
 }
 
-.footer-contacts {
-    width: 278px;
-    height: 234px;
-    gap: 40px;
+.footer-mail,
+.footer-phone {
+    height: 32px;
+    padding-left: 60px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
 }
 
 .footer-mail {
-    height: 32px;
-    padding-left: 60px;
     background-image: url(assets/icons/mail.svg);
     background-repeat: no-repeat;
 }
 
 .footer-phone {
-    height: 32px;
-    padding-left: 60px;
     background-image: url(assets/icons/phone.svg);
     background-repeat: no-repeat;
 }
 
 .footer-locations {
     width: 302px;
-    height: 234px;
-    gap: 32px;
 }
 
 .location {
     height: 46px;
     padding-left: 42px;
+    display: flex;
+    align-items: center;
     background-image: url(assets/icons/pin.svg);
     background-repeat: no-repeat;
+}
+
+.footer-locations a:first-of-type {
+    margin-top: 34px;
+    margin-bottom: 32px;
 }
 
 .link-main:hover:not(.link-active) {
