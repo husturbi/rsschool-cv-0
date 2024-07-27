@@ -165,7 +165,7 @@ h3 {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 35px;
-    line-height: 130%;
+    line-height: 46px;
     letter-spacing: 0.06em;
     color: #545454;
 }
@@ -426,7 +426,7 @@ button,
 .help-list {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 60px;
+    margin-top: 59px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -450,17 +450,16 @@ button,
 }
 
 .donation {
-    height: 462px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 80px;
+    padding-bottom: 100px;
 }
 
 .donation-content {
-    width: 915px;
-    height: 282px;
-    margin-left: auto;
+    max-width: 915px;
     margin-right: auto;
+    margin-left: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -471,7 +470,7 @@ button,
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 20px;
+    gap: 19px;
 }
 
 .content-donation h3 {
@@ -651,6 +650,11 @@ h4 {
 }
 
 @media (max-width: 970px){
+    .page-header {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     .start-screen {
         padding-top: 150px;
     }
@@ -700,6 +704,25 @@ h4 {
     .help-list {
         column-gap: 18vw;
     }
+
+    .help-item {
+        width: 170px;
+    }
+
+    .donation {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .donation-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .content-donation {
+        margin-bottom: 60px;
+        order: -1;
+    }
 }
 
 @media (max-width: 830px){
@@ -725,6 +748,10 @@ h4 {
     .help {
         padding-left: 69px;
         padding-right: 69px;
+    }
+
+    .help-item {
+        width: 170px;
     }
 
     .help-list {
