@@ -109,11 +109,17 @@ a {
     text-align: left;
 }
 
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+    display: none;
+}
+
 .navbar-list {
     width: 443px;
     left: 0;
     display: flex;
     justify-content: space-between;
+    order: 2;
 }
 
 .start-screen {
@@ -794,4 +800,109 @@ h4 {
     .help-list {
         column-gap: 60px;
     }
+}
+
+@media (max-width: 767px) {
+    .page-header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .navbar input[type="checkbox"],
+    .navbar .hamburger-lines {
+        display: block;
+    }
+
+    .navbar {
+        display: flex;
+        position: relative;
+        height: 60px;
+    }
+
+    .navbar input[type="checkbox"] {
+        position: absolute;
+        display: block;
+        height: 22px;
+        width: 30px;
+        top: 19px;
+        right: 0;
+        z-index: 5;
+        opacity: 0;
+    }
+
+    .navbar .hamburger-lines {
+        display: block;
+        height: 22px;
+        width: 30px;
+        position: absolute;
+        top: 19px;
+        right: 0;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .line {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background: #F1CDB3;
+    }
+
+    .navbar-list {
+        display: none;
+    }
+
+    .start-screen {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .start-screen-image {
+        margin: 0;
+    }
+
+    .start-screen-content .content {
+        width: 300px;
+        margin-top: 0; 
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    h2 + p {
+        width: 300px;
+        margin-bottom: 42px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 425px) {
+    h2, h3 {
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: Georgia;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 32.5px;
+        letter-spacing: 0.06em;
+    }
+
+    .start-screen-content .content {
+        margin-bottom: 105px;
+    }
+
+    .start-screen-image {
+        width: 260px;
+        height: 100%;
+        margin-right: -35px;
+    }
+
+    .about {
+        padding: 42px 10px;
+    }
+
 }
