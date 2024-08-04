@@ -159,21 +159,31 @@ a {
 
 .about-content .content {
     width: 430px;
-    height: 381px;
     margin-top: 14px;
+}
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.about-content p:first-of-type {
+    margin: 24px 0;
 }
 
 h3 {
+    width: 400px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 35px;
     line-height: 46px;
     letter-spacing: 0.06em;
     color: #545454;
+}
+
+.head {
+    margin-left: 0;
+    text-align: left;
 }
 
 .about-content p {
@@ -193,15 +203,6 @@ h3 {
     text-align: center;
 }
 
-.pets-content h3 {
-    width: 400px;
-    height: 90px;
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
 .ourpets {
     height: 1342px;
     padding-top: 80px;
@@ -216,7 +217,7 @@ h3 {
 }
 
 .slider-inner {
-    margin-top: 60px;
+    margin-top: 58px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -279,7 +280,7 @@ h3 {
     padding-top: 40px;
     padding-left: 40px;
     padding-right: 40px;
-    background: url(/shelter/assets/images/noise_transparent.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), url("/shelter/assets/images/noise_transparent@2x.png");
+    background: url(assets/images/noise_transparent.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), url("/shelter/assets/images/noise_transparent@2x.png");
     background-position: top center;
 }
 
@@ -421,14 +422,6 @@ button,
     padding-right: 40px;
 }
 
-.help-content h3 {
-    width: 310px;
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
 .help-list {
     margin-left: auto;
     margin-right: auto;
@@ -532,7 +525,6 @@ h4 {
 
 .footer-title {
     width: 279px;
-    height: 90px;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 35px;
@@ -609,12 +601,12 @@ h4 {
 
 .link-main:hover:not(.link-active) {
     color: #fafafa;
-    transform: 0.5s linear;
+    transition: 0.5s linear;
 }
 
 .link-pets:hover:not(.link-active) {
     color: #292929;
-    transform: 0.5s linear;
+    transition: 0.5s linear;
 }
 
 .card:hover {
@@ -798,7 +790,7 @@ h4 {
     }
 
     .help-list {
-        column-gap: 60px;
+        column-gap: 7.8vw;
     }
 }
 
@@ -877,11 +869,81 @@ h4 {
         margin-bottom: 42px;
         text-align: center;
     }
+
+    .pets {
+        padding: 42px 10px;
+    }
+
+    .slider-inner {
+        margin-top: 41px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px 80px;
+    }
+
+    .slider {
+        order: -1;
+        gap: 10vw;
+    }
+
+    .help {
+        padding: 42px 15px;
+    }
+
+    .help-list {
+        gap: 60px 55px;
+    }
+
+    .help-item {
+        width: 130px;
+    }
+
+    .donation {
+        padding: 43px 10px;
+    }
+}
+    
+
+@media (max-width: 610px) {
+    .start-screen-image {
+        width: 400px;
+        height: 100%;
+        margin-right: -35px;
+    }
+
+    .slider-inner {
+        justify-content: center;
+        gap: 20px 1vw;
+    }
+
+    .slider {
+        justify-content: space-around;
+        order: 0;
+    }
+
+    .hide-second {
+        display: none;
+    }
+
+    .help-item {
+        height: 87px;
+    }
+
+    .help-item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .help-item p {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 425px) {
     h2, h3 {
-        width: 250px;
+        width: 300px;
         margin-left: auto;
         margin-right: auto;
         font-family: Georgia;
@@ -889,6 +951,12 @@ h4 {
         font-weight: 400;
         line-height: 32.5px;
         letter-spacing: 0.06em;
+        text-align: center;
+    }
+
+    .head {
+        margin: 0 auto;
+        text-align: center;
     }
 
     .start-screen-content .content {
@@ -905,4 +973,116 @@ h4 {
         padding: 42px 10px;
     }
 
+    .about-content {
+        margin-left: 15px;
+        margin-right: 15px;
+        gap: 42px;
+    }
+
+    .about-content p {
+        margin-left: 15px;
+        margin-right: 15px;
+        text-align: justify;
+    }
+
+    .about-content p:first-of-type {
+        margin: 24px 15px 22px 15px;
+    }
+
+    .about-image {
+        width: 260px;
+        height: 100%;
+    }
+
+    .slider-inner {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px 25vw;
+    }
+
+    .slider {
+        order: -1;
+    }
+
+    .btn-content {
+        margin-top: 41px;
+    }
+
+    .help-list {
+        gap: 30px;
+    }
+    
+    .help-content h3 {
+        width: 222px;
+    }
+
+    .credit-card {
+        width: 281px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    h4 {
+        font-size: 15px;
+        line-height: 16.5px;
+    }
+
+    .content-donation {
+        margin-bottom: 41px;
+    }
+
+    .content-donation p {
+        text-align: center;
+        line-height: 24px;
+        letter-spacing: normal;
+    }
+
+    .donation-text {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: justify;
+    }
+
+    .page-footer {
+        padding: 30px 10px 0 10px;
+    }
+
+    .footer-content {
+        gap: 40px;
+    }
+
+    .footer-title,
+    .footer-locations {
+        font-size: 25px;
+    }
+
+    .footer-mail {
+        margin-left: 12px;
+    }
+
+    .footer-phone {
+        margin-left: 18px;
+    }
+
+    .footer-locations a:first-of-type {
+        margin: 40px 0;
+    }
+
+    .footer-image {
+        width: 260px;
+    }
+}
+
+@media (max-width: 320px) {
+    .help-list {
+        margin-top: 42px;
+        justify-content: start;
+    }
+
+    .donation-image {
+        width: 260px;
+    }
 }
