@@ -109,10 +109,25 @@ a {
     text-align: left;
 }
 
-.navbar input[type="checkbox"],
-.navbar .hamburger-lines {
+.menu-btn {
     display: none;
+    width: 30px;
+    height: 22px;
+    background-color: transparent;
 }
+
+.line {
+    height: 2px;
+    width: 100%;
+}
+
+.line-main {
+    background: #F1CDB3;
+}
+
+.line-pets {
+    background: #000000;
+    }
 
 .navbar-list {
     width: 443px;
@@ -120,6 +135,18 @@ a {
     display: flex;
     justify-content: space-between;
     order: 2;
+}
+
+.hidden-overley {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: #000000;
+    opacity:0;
+    width:0;
+    height:0;
+    transition: opacity 1s;
 }
 
 .start-screen {
@@ -824,57 +851,82 @@ h4 {
         padding-right: 20px;
     }
 
-    .navbar input[type="checkbox"],
-    .navbar .hamburger-lines {
-        display: block;
-    }
-
     .navbar {
-        display: flex;
         position: relative;
-        height: 60px;
     }
 
-    .navbar input[type="checkbox"] {
-        position: absolute;
-        display: block;
-        height: 22px;
-        width: 30px;
-        top: 19px;
-        right: 0;
-        z-index: 5;
-        opacity: 0;
-    }
-
-    .navbar .hamburger-lines {
-        display: block;
-        height: 22px;
-        width: 30px;
-        position: absolute;
-        top: 19px;
-        right: 0;
-        z-index: 2;
+    .menu-btn {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding: 0;
+        border: none;
+        z-index: 99;
+        /*вставка*/
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
     }
 
-    .line {
-        display: block;
-        height: 2px;
-        width: 100%;
+    /*вставка*/
+    .menu-btn.open {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
     }
-
-    .line-main {
-        background: #F1CDB3;
-    }
-
-    .line-pets {
-            background: #000000;
-        }
 
     .navbar-list {
-        display: none;
+        transform: translateX(100%);
+        transition: transform 1s;
+        position: fixed;
+        top: 0;
+        right: -21px;
+        width: 320px;
+        height: 100vh;
+        margin: 0 0 0 auto;
+        display: block;
+        text-align: center;
+        padding-top: 248px;
+        z-index: 12;
+    }
+
+    .navbar-list-main {
+        background-color: #292929;
+    }
+
+    .navbar-list-pets {
+        background-color: #fff;
+    }
+
+    .navbar-list.navbar-list-open {
+        transform: translateX(0%);
+        transition: transform 1s;
+    }
+
+    body.navbar-list-open {
+        overflow: hidden;
+    }
+
+    .hidden-overley.navbar-list-open {
+        height: 100%;
+        width: 100%;
+        opacity:0.5;
+        transition: opacity 1s;
+    }
+
+    .navbar-item {
+        margin-bottom: 40px;
+    }
+
+    .navbar-link {
+        font-size: 32px;
     }
 
     .start-screen {
